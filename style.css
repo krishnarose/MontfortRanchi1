@@ -97,13 +97,14 @@
 
 }
 
-@property --angle{
+@property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
 
-.card::after, .card::before {
+.card::after,
+.card::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -124,15 +125,18 @@
   border-radius: 10px;
   animation: 3s spin linear infinite;
 }
-.card::before{
-  filter:blur(1.5rem);
+
+.card::before {
+  filter: blur(1.5rem);
   opacity: 0.5;
 }
+
 @keyframes spin {
-  from{
-    --angle:0deg;
+  from {
+    --angle: 0deg;
   }
-  to{
-    --angle:360deg
+
+  to {
+    --angle: 360deg
   }
 }
